@@ -11,4 +11,10 @@ public class CalculatorTests {
         Calculator c = new Calculator();
         assertEquals(2, c.sum(1,1));
     }
+
+    @Test
+    public void testMinusOk(){
+        Calculator c = new Calculator();
+        assertEquals(-1, c.minus(1,2));
+    }
 }
