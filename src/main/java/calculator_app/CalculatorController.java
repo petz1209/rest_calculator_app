@@ -13,4 +13,7 @@ public class CalculatorController {
     public int getSum(@RequestParam int a, @RequestParam int b){
         return calc.sum(a, b);
     }
+    public int getMinus(@RequestParam int a, @RequestParam int b){return calc.minus(a, b);}
+    public int getMultiply(@RequestParam int a, @RequestParam int b){return calc.multiply(a, b);}
+    public double getDivide(@RequestParam double a, @RequestParam double b){return calc.divide(a, b);}
 }
