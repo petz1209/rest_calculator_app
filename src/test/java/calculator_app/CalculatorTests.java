@@ -23,4 +23,14 @@ public class CalculatorTests {
         Calculator c = new Calculator();
         assertEquals(10, c.multiply(2,5));
     }
+    @Test
+    public void testDivideOk(){
+        Calculator c = new Calculator();
+        assertEquals(2.0, c.divide(10.0, 5.0));
+    }
+    @Test
+    public void testDivideInvalid(){
+        Calculator c = new Calculator();
+        assertEquals(0.0, c.divide(10.0, 0.0));
+    }
 }
