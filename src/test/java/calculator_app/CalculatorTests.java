@@ -17,4 +17,10 @@ public class CalculatorTests {
         Calculator c = new Calculator();
         assertEquals(-1, c.minus(1,2));
     }
+
+    @Test
+    public void testMultiply(){
+        Calculator c = new Calculator();
+        assertEquals(10, c.multiply(2,5));
+    }
 }
